@@ -13,6 +13,8 @@ user1.AddScore(7);
 user1.AddScore(2);
 user1.AddScore(9);
 
+var result = user1.Result;
+
 user2.AddScore(1);
 user2.AddScore(7);
 user2.AddScore(3);
