@@ -7,15 +7,15 @@ namespace NewProject13.tests
         [Test]
         public void WhenUserColectTwoPoitShoudesCorectResult()
         {
-            var user = new Employee("Tom", "John", 31);
+            var user = new Employee("Tom", "John");
 
-            user.AddScore(4);
-            user.AddScore(5);
-            user.AddScore(-6);
+            user.AddGrade(4);
+            user.AddGrade(5);
+            user.AddGrade(-6);
 
-            var result = user.Result;
+            var statistics = user.GetStatistics();
             
-            Assert.AreEqual(3, result);
+            Assert.AreEqual(5, statistics.Max);
         }
     }
 }

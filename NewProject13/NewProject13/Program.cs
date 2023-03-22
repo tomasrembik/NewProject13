@@ -3,9 +3,10 @@
 using NewProject13;
 
 var employee = new Employee("Marek", "Baniak");
-employee.AddGrade(3);
-employee.AddGrade(5);
-employee.AddGrade(8);
+employee.AddGrade("Tom");
+employee.AddGrade("200");
+employee.AddGrade(2);
+employee.AddGrade(6);
 var statistics = employee.GetStatistics();
 
 Console.WriteLine($"Average: {statistics.Average:N2}");
