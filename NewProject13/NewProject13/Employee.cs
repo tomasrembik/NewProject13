@@ -37,7 +37,9 @@ namespace NewProject13
                 this.grades.Add(grade);
             }
             else
-            { Console.WriteLine("Dane są nieprawidłowe");
+            {
+                throw new Exception("Dane są nieprawidłowe");
+                
             }
         }
 
@@ -49,7 +51,8 @@ namespace NewProject13
             }
             else
             {
-                Console.WriteLine("string is not float");
+                throw new Exception("string is not float");
+                
             }
         }
         public void AddGrade(double grade)
@@ -89,9 +92,9 @@ namespace NewProject13
                     this.grades.Add(20);
                     break;
                 default:
-                    Console.WriteLine("Wrong Letter");
+                    throw new Exception("Wrong Letter");
                     
-                    break;
+                    
             }
         }
 
