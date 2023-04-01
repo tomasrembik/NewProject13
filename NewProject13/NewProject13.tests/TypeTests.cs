@@ -1,7 +1,7 @@
 ﻿
 using System.Runtime.CompilerServices;
 
-namespace NewProject13.tests
+namespace NewProject13.Tests
 {
     public class TypeTests // Dodanie testrow dzien 8
     {
