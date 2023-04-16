@@ -4,29 +4,29 @@ using System.Runtime.CompilerServices;
 
 namespace NewProject13
 {
-    public class Employee
+    public class Employee : Person
     {
         private List<float> grades = new List<float>();
 
-        public Employee(string name, string surname)
+        public Employee(string name, string surname, string Sex)
+            : base(name,surname,Sex)
         {
-            this.Name = name;
-            this.Surname = surname;
-
-
+           
+            
         }
         public Employee()
+            
         {
 
         }
 
-        public Employee(string name)
+        public Employee(string name, string surname)
+            : base(name,surname)
         {
-            this.Name = name;
+           // this.Name = name;
             
         }
 
-        public string Name { get; private set; }
         public string Surname { get; private set; }
 
 
